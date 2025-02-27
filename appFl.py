@@ -25,6 +25,11 @@ mongo = PyMongo(app)
 # Configuración de Socket.IO
 socketio = SocketIO(app, cors_allowed_origins="*")  # Permite conexiones desde cualquier origen
 
+@app.route('/')
+def index():
+    return "Hola mundo"
+
+
 # Ruta para incrustar archivos
 @app.route('/embed', methods=['POST'])
 def route_embed():
