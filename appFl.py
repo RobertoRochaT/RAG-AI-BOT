@@ -27,7 +27,7 @@ socketio = SocketIO(app, cors_allowed_origins="*")  # Permite conexiones desde c
 
 @app.route('/')
 def index():
-    return "Hola mundo"
+    return "<h1>App is running</h1>"
 
 
 # Ruta para incrustar archivos
